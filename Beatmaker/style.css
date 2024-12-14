@@ -33,7 +33,6 @@ cursor: pointer;
 .kick-track,.snare-track, .hihat-track {
     display: flex;
     align-items: center;
-    width: 70%;
     justify-content: space-between;
     margin-top: 5rem;
 }
@@ -45,12 +44,13 @@ cursor: pointer;
 .sequencer {
     display: flex;
     min-height: 100vh;
+    min-width: 100vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 .controls {
+    width: 20rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,14 +71,14 @@ cursor: pointer;
     transition: all 0.5s ease
 }
 
-.kick.pad.active {
-    background: rgb(111, 198, 219);
+.pad.kick-pad.active {
+    background: rgb(13, 141, 173);
 }
-.snare.pad.active {
-    background: rgb(221, 81, 186);
+.pad.snare-pad.active {
+    background: rgb(175, 20, 136);
 }
-.hihat.pad.active {
-    background: rgba(223, 139, 36, 0.377);
+.pad.hihat-pad.active {
+    background: rgba(255, 140, 0, 0.877);
 }
 
 .play {
@@ -89,5 +89,20 @@ cursor: pointer;
     cursor: pointer;
     border-radius: .5rem;
     margin-top: 2rem;
+}
 
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes playTrack {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
 }

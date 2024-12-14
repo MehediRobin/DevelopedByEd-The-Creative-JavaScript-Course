@@ -8,6 +8,7 @@
     <title>Beatmaker Project</title>
 </head>
 <body>
+<div class="container">
     <div class="sequencer">
         <div class="kick-track">
             <div class="controls">
@@ -78,7 +79,19 @@
             </div>
         </div>
         <button class="play">Play</button>
+        <audio class="kick-sound" src="./sounds/kick-classic.wav"></audio>
+        <audio class="snare-sound" src="./sounds/snare-acoustic01.wav"></audio>
+        <audio class="hihat-sound" src="./sounds/hihat-acoustic01.wav"></audio>
     </div>
+    <div class="bit-rate">
+        <select class="bit-peak" >
+            <option class="bit-high" value="150">High</option>
+            <option class="bit-medium" value="90">Medium</option>
+            <option class="bit-low" value="30">Low</option>
+        </select>
+
+    </div>
+</div>
 <script src="./app.js" rel="stylesheet" type="text/javascript"></script>
 </body>
 </html>
